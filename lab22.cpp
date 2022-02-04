@@ -1,4 +1,4 @@
-// Please include header (lab22.h) here.
+#include "lab22.h"
 
 int main(){
 	srand(time(0));
@@ -20,7 +20,7 @@ int main(){
 		player_action = toupper(player_action);
 		if(player_action == 'E') break; 
 		
-		int temp = rand()%3;
+		int temp = rand()%3; 
 		if(temp <= 1) monster_action = 'A';
 		else if(temp == 2) monster_action = 'G';
 		
